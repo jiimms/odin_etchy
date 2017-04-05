@@ -1,0 +1,32 @@
+/*div {
+    height: 100px;
+    width: 100px;
+    background-color: #FA6900;
+    border-radius: 5px;
+}*/
+
+#sketchpad{
+	width: 50%;
+	margin:auto;
+
+}
+
+.gridwrapper {
+	width: 500px;
+	height:500px;
+	border: 1px solid black;
+}
+.row {
+     color: #888888; 
+     opacity: .5; 
+     /*border: 1px solid black;
+    */
+}
+
+.column {
+	
+	height: 100%;
+	/*border: 1px solid black;*/
+	display: inline-block;
+	/*float: right;*/
+}
