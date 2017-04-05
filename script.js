@@ -1,30 +1,24 @@
 $(document).ready(function(){
     size=500/12;
     total=12
-	base();
+	basic();
 });
 
-function base(){
+function basic(){
+    clear();
     createGrid(total);
     color();
 }
 
-$(".start").click(function() {
+$(".gridsize").click(function() {
     total = prompt("Please enter a number");
-    console.log("Total is", total);
-    clear();
     size=500/total;
-    base();
+    basic();
 });
 
 $(".reset").click(function(){
-    clear();
-    base();
+    basic();
 });
-
-function clear(){
-    $('.row, .column').remove();
-};
 
 function createGrid(total) {
     for (var rowno = 0; rowno < total; rowno++) {
@@ -41,15 +35,18 @@ function createGrid(total) {
 };
 
 function color(){
-$('.column').mouseenter(function(){
-	$(this).css("background-color", "red");
-});
+    $('.column').mouseenter(function(){
+    	$(this).css("background-color", "red");
+    });
     uncolor();
 }
 
 function uncolor(){
-$('.column').click(function(){
-    $(this).css("background-color", "white");
-});
-
+    $('.column').click(function(){
+        $(this).css("background-color", "white");
+    });
 }
+
+function clear(){
+    $('.row, .column').remove();
+};
