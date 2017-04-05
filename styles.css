@@ -3,7 +3,7 @@ body {
     background-color: lightBlue;
 }
 #clickable {
-	width: 600px;
+	width: 500px;
 	margin: 50px auto 20px;
 }
 
@@ -12,16 +12,16 @@ body {
 }
 
 #sketchpad{
-	width: 600px;
-	height:600px;
+	width: 500px;
+	height:500px;
 	margin:auto;
 	border: 1px solid black;
 
 }
 
 .gridwrapper {
-	width: 600px;
-	height:600px;
+	width: 500px;
+	height:500px;
 	/*border: 1px solid black;*/
 	background-color: white;
 }

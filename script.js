@@ -1,5 +1,5 @@
 $(document).ready(function(){
-    size=600/12;
+    size=500/12;
     total=12
 	basic();
 });
@@ -12,7 +12,7 @@ function basic(){
 
 $(".gridsize").click(function() {
     total = prompt("Please enter a number");
-    size=600/total;
+    size=500/total;
     basic();
 });
 
