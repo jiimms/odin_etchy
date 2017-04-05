@@ -1,5 +1,5 @@
 $(document).ready(function(){
-    size=500/12;
+    size=600/12;
     total=12
 	basic();
 });
@@ -12,7 +12,7 @@ function basic(){
 
 $(".gridsize").click(function() {
     total = prompt("Please enter a number");
-    size=500/total;
+    size=600/total;
     basic();
 });
 
@@ -22,12 +22,12 @@ $(".reset").click(function(){
 
 function createGrid(total) {
     for (var rowno = 0; rowno < total; rowno++) {
-        var $row = $("<div>", {"class": "row"});
-        $('.row').css({'height':size + "px"});
+        var $row = $("<div>", {"class": "row", 'height':size + "px"});
+        // $('.row').css({'height':size + "px"});
         
         for (var columnIndex = 0; columnIndex < total; columnIndex++) {
-            var $column = $("<div>", {"class": "column"});
-            $('.column').css({'width':size + "px"});
+            var $column = $("<div>", {"class": "column", 'width':size + "px"});
+            // $('.column').css({'width':size + "px"});
             $row.append($column);
         };
         $(".gridwrapper").append($row);
